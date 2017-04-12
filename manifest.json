@@ -1,0 +1,20 @@
+{
+  "name":"duoma_weibo",
+  "version": "0.1",
+  "manifest_version":2,
+  "description": "do",
+  "browser_action": {
+
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://detail.tmall.com/item*"],
+      "js": ["js/jquery.min.js","js/do.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
