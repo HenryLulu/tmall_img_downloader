@@ -11,7 +11,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://detail.tmall.com/item*"],
+      "matches": ["https://*.tmall.com/item*", "https://*.taobao.com/item*"],
       "js": ["js/jquery.min.js","js/do.js"],
       "run_at": "document_end",
       "all_frames": true
